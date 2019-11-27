@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/homeicon"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/profileicon"
+            android:title="Profile" />
+        <item
+
+            android:id="@+id/nav_dalelelsaydlyat"
+            android:icon="@drawable/dalelicon"
+            android:title="Emergency Call"
+            />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/dalelicon"
+            android:title="دليل الادويه" />
+
+
+    </group>
+
+    <item android:title="Connect To Us">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/help"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/logout"
+                android:title="LogOut" />
+        </menu>
+    </item>
+
+</menu>

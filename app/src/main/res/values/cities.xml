@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="cities">
+
+        <item>القاهره</item>
+        <item>الجيزه</item>
+        <item>الاسكندريه</item>
+        <item>الاسماعيليه</item>
+        <item>البحيره</item>
+        <item>الدقهليه</item>
+        <item>المنيا</item>
+        <item>بني سويف</item>
+        <item>اسيوط</item>
+        <item>قنا</item>
+        <item>دمياط</item>
+        <item>الفيوم</item>
+        <item>كفر الشيخ</item>
+        <item>مرسي مطروح</item>
+        <item>اسوان</item>
+        <item>الاقصر</item>
+        <item>سوهاج</item>
+
+        <item>الشرقيه</item>
+        <item>الغربيه</item>
+        <item>test</item>
+
+
+
+    </string-array>
+
+</resources>

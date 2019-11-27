@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "239153872943",
+    "firebase_url": "https://final-pharma.firebaseio.com",
+    "project_id": "final-pharma",
+    "storage_bucket": "final-pharma.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239153872943:android:db478e268775e186",
+        "android_client_info": {
+          "package_name": "com.example.islamgsayed.firstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239153872943-hp8ksts5nbf1a1ikdlmm3sobdgmg970n.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "239153872943-hp8ksts5nbf1a1ikdlmm3sobdgmg970n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcOuUme0PyPkCkwj_beVMEjaRWlWZ16nY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

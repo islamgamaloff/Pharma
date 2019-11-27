@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registrationform"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mesa"
+    android:orientation="vertical"
+    tools:context="com.example.islamgsayed.firstapp.registrationform">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ITEM_FORM"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="#275195"
+
+        app:cardCornerRadius="30dp">
+        <TextView
+
+    android:textColor="@color/BLACK"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="REGISTRATION FORM"
+    android:textSize="30dp"
+    android:elevation="8dp"
+    android:textStyle="bold"
+    android:gravity="center"
+
+    />
+
+    </android.support.v7.widget.CardView>
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+
+        android:gravity="center"
+        android:background="@drawable/reg"
+        android:text="Register"
+        android:textColor="#000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+
+        android:gravity="center"
+        android:id="@+id/btnback"
+        android:layout_width="113dp"
+        android:layout_height="50dp"
+
+
+        android:background="@drawable/bluefullbutton"
+        android:text="Back"
+        android:textColor="#000"
+        android:elevation="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnregister"
+        android:layout_toStartOf="@+id/btnregister" />
+
+    <EditText
+        android:textColor="@color/BLACK"
+        android:id="@+id/edittextemail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:textColorHint="#000"
+        android:inputType="textEmailAddress"
+        android:layout_above="@+id/edittextpassword"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:textColor="@color/BLACK"
+        android:id="@+id/lastname"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:textColorHint="#000"
+        android:gravity="center"
+        android:hint="LastName"
+        android:inputType="text"
+        android:layout_above="@+id/edittextemail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:textColor="@color/BLACK"
+            android:id="@+id/editTextage"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+
+            android:textColorHint="#000"
+            android:gravity="center"
+            android:hint="Age"
+            android:inputType="number"
+        android:layout_alignBaseline="@+id/editTextPhonenumber"
+        android:layout_alignBottom="@+id/editTextPhonenumber"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:textColorHint="#000"
+        android:textColor="@color/BLACK"
+        android:id="@+id/edittextpassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_weight="0.41"
+        android:layout_above="@+id/editTextrepassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:textColor="@color/BLACK"
+        android:id="@+id/editTextrepassword"
+        android:textColorHint="#000"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:hint="Re-Password"
+        android:inputType="textPassword"
+        android:layout_alignBottom="@+id/editTextPhonenumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="56dp" />
+
+    <EditText
+        android:textColor="@color/BLACK"
+        android:textColorHint="#000"
+        android:id="@+id/editTextPhonenumber"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:layout_marginBottom="42dp"
+        android:layout_above="@+id/btnregister"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:textColor="@color/BLACK"
+        android:id="@+id/firstname"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+
+        android:textColorHint="#000"
+
+        android:hint="First name "
+
+
+        android:inputType="text"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:layout_above="@+id/edittextemail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

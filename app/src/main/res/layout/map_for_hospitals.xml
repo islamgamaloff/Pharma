@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_map_places"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f8f8"
+    android:orientation="vertical"
+    tools:context="com.example.islamgsayed.firstapp.MapForHospitals">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:padding="7dp"
+        >
+        <fragment
+            android:id="@+id/map1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            >
+
+            <TextView
+                android:textStyle="italic"
+                android:textColor="#a39d9d"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="All Hospitals In Your Location"
+                android:id="@+id/textView7" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/lin2"
+            android:background="@color/blue100"
+            android:layout_width="300dp"
+            android:layout_height="3dp"
+
+            android:layout_below="@+id/lin"
+            android:layout_centerHorizontal="true"></LinearLayout>
+
+        <ListView
+
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lissForHospitals"
+        ></ListView>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

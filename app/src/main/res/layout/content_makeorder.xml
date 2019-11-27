@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_makeorder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f8f8"
+    tools:context="com.example.islamgsayed.firstapp.makeorder"
+    tools:showIn="@layout/app_bar_makeorder"
+    android:elevation="8dp">
+    <LinearLayout
+        android:id="@+id/lii"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Delivery To Your Door "
+            android:textColor="#807e7e"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/blue50"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/lii2"
+        android:layout_width="300dp"
+        android:layout_height="4dp"
+        android:layout_below="@+id/lii"
+        android:layout_centerHorizontal="true">
+    </LinearLayout>
+<ListView
+    android:layout_marginTop="5dp"
+    android:layout_below="@id/lii2"
+    android:id="@+id/listViewMakeOrder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</ListView>
+</RelativeLayout>

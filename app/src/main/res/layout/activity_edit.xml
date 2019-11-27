@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f8f8"
+    tools:context="com.example.islamgsayed.firstapp.pillapp.ViewController.EditActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/pill_name_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pill Name"
+                android:textSize="20sp"
+
+                android:textColor="#000"
+                android:layout_marginTop="8dp"/>
+
+            <EditText android:id="@+id/pill_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pill_name_title"
+                android:maxLength="12"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textColorHint="#000"
+                android:background="@drawable/blue_textfield_activated_holo_light"
+                android:hint="@string/pill_name" />
+
+            <TextView android:id="@+id/time_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pill_name"
+                android:text="Reminder Time"
+                android:textSize="20sp"
+                android:textColor="#000"
+
+                android:layout_marginTop="8dp"/>
+
+            <TextView android:id="@+id/reminder_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time_title"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:clickable="true"
+                android:layout_marginTop="8dp"/>
+
+            <TextView android:id="@+id/schedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reminder_time"
+                android:text="Schedule"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_marginTop="8dp"/>
+
+            <CheckBox android:id="@+id/every_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Every day"
+                android:textColor="#000"
+                android:onClick="onCheckboxClicked"
+                android:layout_below="@+id/schedule"/>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/checkbox_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/every_day"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp">
+
+                <com.example.islamgsayed.firstapp.pillapp.ViewController.CustomCheckBox
+                    android:id="@+id/checkbox_monday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Monday"
+                    android:button="@null"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="1dp"
+                    android:gravity="center"/>
+
+                <com.example.islamgsayed.firstapp.pillapp.ViewController.CustomCheckBox                    android:id="@+id/checkbox_tuesday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Tuesday"
+                    android:button="@null"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="1dp"
+                    android:gravity="center"/>
+
+                <com.example.islamgsayed.firstapp.pillapp.ViewController.CustomCheckBox                    android:id="@+id/checkbox_wednesday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Wednesday"
+                    android:button="@null"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="1dp"
+                    android:gravity="center"/>
+
+                <com.example.islamgsayed.firstapp.pillapp.ViewController.CustomCheckBox                    android:id="@+id/checkbox_thursday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Thursday"
+                    android:button="@null"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="1dp"
+                    android:gravity="center"/>
+
+                <com.example.islamgsayed.firstapp.pillapp.ViewController.CustomCheckBox                    android:id="@+id/checkbox_friday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Friday"
+                    android:button="@null"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="1dp"
+                    android:gravity="center"/>
+
+                <com.example.islamgsayed.firstapp.pillapp.ViewController.CustomCheckBox                    android:id="@+id/checkbox_saturday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Saturday"
+                    android:button="@null"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="1dp"
+                    android:gravity="center"/>
+
+                <com.example.islamgsayed.firstapp.pillapp.ViewController.CustomCheckBox                    android:id="@+id/checkbox_sunday"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Sunday"
+                    android:button="@null"
+                    android:onClick="onCheckboxClicked"
+                    android:padding="1dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+
+        android:background="#f6f8f8">
+
+        <Button
+            android:id="@+id/btn_cancel_alarm"
+            android:text="@string/str_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:textColor="#000"
+            android:background="@drawable/bluefullbutton"
+   />
+
+        <View android:layout_height="fill_parent"
+            android:layout_width="2dp"
+
+            android:background="#97c4ff"
+            />
+
+        <Button
+            android:background="@drawable/bluefullbutton"
+            android:id="@+id/btn_set_alarm"
+            android:text="@string/str_btn_set_alarm"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:textColor="#000"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

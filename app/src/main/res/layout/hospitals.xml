@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/pharmacies"
+    android:background="#f6f8f8">
+
+
+
+
+    <TextView
+        android:textColor="#000"
+        android:text="islam gamal sayed"
+
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+
+
+
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/hospitallogo"
+        android:id="@+id/imageView5"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:textColor="@color/BLACK"
+        android:text="ahmed mohamed "
+android:layout_marginLeft="10dp"
+        android:layout_below="@id/name1"
+     android:gravity="center"
+        android:textSize="10sp"
+        android:id="@+id/vicinity1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+    />
+
+</RelativeLayout>
+
+

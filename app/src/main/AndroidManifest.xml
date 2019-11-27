@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.islamgsayed.firstapp">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bluelogo"
+        android:label="فارما"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".loginActivity" />
+        <!-- <activity android:name=".registrationform" /> -->
+        <activity
+            android:name=".navdrawer"
+            android:label="Home" />
+        <activity android:name=".registrationform" />
+        <activity
+            android:name=".helpnnav"
+            android:label="Help" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <!--
+            <meta-data
+            android:name="com.google.android.geo.API_KEY"
+          android:value=" AIzaSyAforuHgryt1Z3GtD7wZcgOIypNiSotZFI " />
+        -->
+
+        <activity
+            android:name=".profile"
+            android:label="@string/title_activity_profile" />
+        <activity
+            android:name=".pharmacies"
+            android:label="@string/title_activity_pharmacies" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".MapPlacesActivity" />
+        <activity android:name=".MapForHospitals" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/api_key" />
+
+        <activity android:name=".popularDiseses" />
+        <activity
+            android:name=".makeorder"
+            android:label="@string/title_activity_makeorder" />
+        <activity
+            android:name=".cart"
+            android:label="@string/title_activity_cart" />
+        <activity
+            android:name=".pillapp.ViewController.AddActivity"
+            android:label="@string/title_activity_add"
+            android:parentActivityName=".pillapp.ViewController.MainActivity"
+            android:theme="@style/Theme.Blue">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.islamgsayed.firstapp.pillapp.ViewController.MainActivity" />
+        </activity>
+        <activity
+            android:name=".pillapp.ViewController.AlertActivity"
+            android:label="@string/title_activity_alert"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="teamqitalach.pillapp.alertactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pillapp.ViewController.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Blue">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pillapp.ViewController.PillBoxActivity"
+            android:label="@string/title_activity_edit"
+            android:theme="@style/Theme.Blue" />
+        <activity
+            android:name=".pillapp.ViewController.ScheduleActivity"
+            android:label="@string/title_activity_setting"
+            android:parentActivityName=".pillapp.ViewController.MainActivity"
+            android:theme="@style/Theme.Blue">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.islamgsayed.firstapp.pillapp.ViewController.MainActivity" />
+        </activity>
+        <activity
+            android:name="pillapp.ViewController.EditActivity"
+            android:label="@string/title_activity_edit"
+            android:theme="@style/Theme.Blue" />
+        <activity android:name=".PharmacyDetails" />
+        <activity android:name=".PharmacyAdmin"></activity>
+    </application>
+
+</manifest>

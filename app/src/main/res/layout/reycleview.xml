@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="8dp"
+    android:layout_marginLeft="5dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/hidden1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="0dp"
+
+            />
+         <TextView
+            android:id="@+id/hidden2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="0dp"
+
+            />
+        <TextView
+            android:textColor="#000"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:id="@+id/disname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اسم المرض"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+
+        <!--<TextView-->
+
+            <!--android:textColor="#ffffff"-->
+                <!--android:id="@+id/namedis"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="95"-->
+                <!--android:text="name"-->
+                <!--android:textSize="30sp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true" />-->
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

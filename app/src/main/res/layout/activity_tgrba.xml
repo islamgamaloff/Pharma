@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tgrba"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:gravity="center"
+    android:orientation="vertical"
+
+    tools:context="com.example.islamgsayed.firstapp.tgrba">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageView4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mediniceicon" />
+
+    <TextView
+
+        android:id="@+id/sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="serif"
+        android:text="اسم المرض"
+        android:textColor="#000"
+        android:textSize="12dp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="اعراض المرض"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="العرض"
+        android:textColor="#000"
+        android:textSize="20dp" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="طرق العلاج"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/desss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="العلاج"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.163"
+            android:background="#f6f8f8">
+
+            <ImageView
+                android:id="@+id/imageViewForPharmacyDetails"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/looogooo" />
+
+            <TextView
+                android:id="@+id/textViewForPharmacyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/imageViewForPharmacyDetails"
+                android:text="Pharmacy Name"
+                android:textColor="#000" />
+
+
+            <TextView
+                android:id="@+id/textViewForPharmacyAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewForPharmacyName"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/imageViewForPharmacyDetails"
+                android:text="Address Name"
+                android:textColor="#949393" />
+
+
+            <TextView
+                android:id="@+id/textViewww"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageViewForPharmacyDetails"
+                android:layout_alignStart="@+id/imageViewForPharmacyDetails"
+                android:layout_below="@+id/imageViewForPharmacyDetails"
+
+                android:layout_marginTop="24dp"
+                android:text="Min Order"
+                android:textColor="#949393" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textViewww"
+                android:layout_alignBottom="@+id/textViewww"
+                android:layout_alignLeft="@+id/textViewForPharmacyAddress"
+                android:layout_alignStart="@+id/textViewForPharmacyAddress"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:text="EGP 0"
+                android:textColor="@color/BLACK" />
+
+            <TextView
+                android:id="@+id/textView11"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView10"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/textView10"
+                android:layout_toRightOf="@+id/textView10"
+                android:text="Deivery fee"
+                android:textColor="#949393" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView11"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:text="EGP 10"
+                android:textColor="@color/BLACK" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="2dp"
+                android:layout_above="@+id/textView10"
+                android:background="#d6d4d4"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="2dp"
+                android:layout_below="@id/textViewww"
+                android:background="#d6d4d4"
+
+                ></LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="#fff">
+
+            <FrameLayout
+                android:id="@+id/ph_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/cart_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="8dp"
+        android:src="@drawable/cart" />
+</FrameLayout>
